@@ -20,12 +20,11 @@ public class Calculator {
     public double divideCalc(double a, double b) {
         if(b==0){
             throw new ArithmeticException("На ноль делить нельзя!");
-        }else {
+        }else{
             return a / b;
         }
-
-        }
-
     }
+
+}
 
 

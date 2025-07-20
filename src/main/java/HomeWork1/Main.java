@@ -8,12 +8,6 @@ public class Main {
         System.out.println("Напишите тесты для разных случаев (регистр, пробелы, спецсимволы).");
         Palindrome palindrome = new Palindrome();
         String try1 = "А роза упала на лапу Азора!";
-        String try2 = "Я иду с мечем судия";
-        String try3 = "топот";
-        String try4 = "123321 123321";
-        System.out.println("Is a "+ try1 + " a polindrome? " + palindrome.isPalindrome(try1));
-        System.out.println("Is a "+ try2 + " a polindrome? " + palindrome.isPalindrome(try2));
-        System.out.println("Is a "+ try3 + " a polindrome? " + palindrome.isPalindrome(try3));
-        System.out.println("Is a "+ try4 + " a polindrome? " + palindrome.isPalindrome(try4));
+        System.out.println("Is a "+ try1 + " a palindrome? " + palindrome.isPalindrome(try1));
     }
 }

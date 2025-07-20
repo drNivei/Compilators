@@ -7,7 +7,7 @@ public class Palindrome {
         int x = palindrome.length() - 1;
 
         while (x > i) {
-            //spec symbols skip
+            //Skip all, except Letters and Digits
             while(!Character.isLetter(palindrome.charAt(x))) {
                 if(Character.isDigit(palindrome.charAt(x))){
                     break;
@@ -21,7 +21,7 @@ public class Palindrome {
                 i++;
             }
 
-            //compare chars and remove Upper\Lower case addiction.
+            //Compare chars and remove Upper\Lower case addiction.
             if (palindrome.charAt(x) != palindrome.charAt(i)
                     && Math.abs((int) palindrome.charAt(x) - (int) palindrome.charAt(i)) != 32) {
                 return false;
