@@ -20,7 +20,6 @@ public class PalindromeTest {
         Assertions.assertTrue(palindrome.isPalindrome("123321"));
     }
 
-
     @Test
     public void testStringPalindromeSpaces(){
         Assertions.assertTrue(palindrome.isPalindrome("а роза упала на лапу азора"));
@@ -37,8 +36,14 @@ public class PalindromeTest {
     }
 
     @Test
-    public void testStringPalindromeFail(){
+    public void testStringPalindromeFailLetters(){
         Assertions.assertFalse(palindrome.isPalindrome("asdasfhgajfh"));
     }
+
+    @Test
+    public void testStringPalindromeFailDigits(){
+        Assertions.assertFalse(palindrome.isPalindrome("12343421"));
+    }
+
 
 }

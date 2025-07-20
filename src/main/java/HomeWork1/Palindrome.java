@@ -8,16 +8,10 @@ public class Palindrome {
 
         while (x > i) {
             //Skip all, except Letters and Digits
-            while(!Character.isLetter(palindrome.charAt(x))) {
-                if(Character.isDigit(palindrome.charAt(x))){
-                    break;
-                }
+            while(!Character.isLetter(palindrome.charAt(x)) && !Character.isDigit(palindrome.charAt(x))) {
                 x--;
             }
-            while(!Character.isLetter(palindrome.charAt(i))) {
-                if(Character.isDigit(palindrome.charAt(i))){
-                    break;
-                }
+            while(!Character.isLetter(palindrome.charAt(i)) && !Character.isDigit(palindrome.charAt(i))) {
                 i++;
             }
 
