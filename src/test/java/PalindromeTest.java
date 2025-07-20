@@ -4,13 +4,6 @@ import org.junit.jupiter.api.Test;
 
 public class PalindromeTest {
     Palindrome palindrome = new Palindrome();
-    String try1 = "А роза упала на лапу Азора!";
-    String try2 = "Я иду с мечем судия";
-    String try3 = "топот";
-    String try4 = "123321 123321";
-
-
-
 
     @Test
     public void testStringPalindromeLettersCyr(){
