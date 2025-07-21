@@ -22,4 +22,11 @@ public class Person {
     public boolean alcohol(){
         return age > 18;
     }
+
+    public void parseAge(){
+        if(age<0){
+            throw new IllegalArgumentException ("Возраст не может быть отрицательным!");
+        }
+    }
+
 }

@@ -1,3 +1,4 @@
+import org.example.IllegalArgumentException;
 import org.example.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,12 +19,15 @@ public class FirstTest {
         Assertions.assertTrue(person.alcohol());
     }
 
-    @BeforeEach
-    public void beforeEach (){
-
+    @Test
+    public void personTest_parseAge() {
+        try {
+            Person person = new Person("S", -5);
+            person.parseAge();
+            Assertions.fail("Expected Возраст не может быть отрицательным! Exception was not thrown."); // If execution reaches here, test fails
+        } catch (IllegalArgumentException e) {
+            assertEquals("Возраст не может быть отрицательным!", e.getMessage());
+        }
     }
 
-    public void addTest(int a, int b, int c){
-        assertEquals(c, a+b);
-    }
 }

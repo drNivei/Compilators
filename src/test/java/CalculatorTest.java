@@ -23,7 +23,7 @@ public class CalculatorTest {
         try {
             // Code that is expected to throw an exception
             calculator.divideCalc(1,0);
-            Assertions.fail("Expected UnsupportedOperationException was not thrown."); // If execution reaches here, test fails
+            Assertions.fail("Expected На ноль делить нельзя! Exception was not thrown."); // If execution reaches here, test fails
         } catch (RuntimeException e) {
             // Exception caught, test passes
             assertEquals("На ноль делить нельзя!", e.getMessage());
