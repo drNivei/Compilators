@@ -12,12 +12,7 @@ public class Main {
         Palindrome palindrome = new Palindrome();
         String try1 = "А роза упала на лапу Азора!";
         System.out.println("Is a "+ try1 + " a palindrome? " + palindrome.isPalindrome(try1));
-
-        ListUtils listUtils = new ListUtils();
-        List<Integer> list = new ArrayList<>();
-        //list.add(1);
-        list = listUtils.filterEvenNumbers(list);
-        System.out.println(list);
+        System.out.println();
 
         System.out.println("Добавь вычисление выражения в строке:\n" + " \"2 + 3 * 4\" → 14");
         ScientificCalculator scientificCalculator = new ScientificCalculator();
